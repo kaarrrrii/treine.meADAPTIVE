@@ -1,43 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 * {
-  font-family: "Raleway", sans-serif;
+  font-family: "Mulish", sans-serif;
 	padding: 0;
 	margin: 0;
 }
 
 body {
+	display: flex;
+	flex-direction: column;
 	background-color: #69B99D;
+	margin-top: 6rem;
+	margin-left: 19rem;
 }
 
 .contentWrapper {
 	background-color: white;
+	width: 1280px;
+	height: 720px;
 }
 
 header {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	align-content: center;
+	justify-content: space-between;
+	padding-top: 4rem;
+	padding-left: 8.2rem;
+	padding-right: 7rem;
 }
 
 .logo {
 	color: #89C5CC;
-	font-weight: bold;
-	font-size: 1.2rem;
+	font-weight: 750;
+	font-size: 1.4rem;
 }
 
 .navigation {
 	list-style-type: none;
 	display: flex;
-	font-weight: bold;
 	color: grey;
+	font-size: 1.2rem;
+	justify-content: right;
+	font-weight: 300;
+}
 
+li {
+	margin-left: 3rem;
+}
+
+li:hover {
+	color: black;
+	font-weight: bold;
+	cursor: pointer;
 }
 
 span {
-	font-weight: bold;
+	font-weight: bolder;
 }
 
 .titleSpanText {
@@ -50,14 +68,67 @@ main {
 	align-items: center;
 }
 
+.title {
+	font-size: 3rem;
+	text-transform: uppercase;
+	line-height: 4.5rem;
+	margin-bottom: 10px;
+}
+
+.description {
+	color: gray;
+	line-height: 1.7rem;
+}
+
 .startBtn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	color: white;
-	background-color: #89C5CC;
+	background-color: #69B99D;
 	border: none;
+	border-radius: 0.3rem;
+	width: 10rem;
+	height: 3.2rem;
+	font-size: 1rem;
+	margin-top: 2rem;
+}
+
+.startBtn:hover {
+	background-color: #61ad93;
+	cursor: pointer;
+}
+
+.whatsupImg {
+	margin-right: 0.5rem;
 }
 
 footer { 
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: relative;
 }
+
+.footerText {
+	padding-top: 3.5rem;
+}
+
+.footerSpanText {
+	font-weight: 800;
+	cursor: pointer;
+}
+
+.ballsDeco {
+	position: absolute;
+	right: 0;
+	top: 2rem;
+}
+
+.aboutSection {
+	margin-top: 6rem;
+	background-color: white;
+	width: 1280px;
+	height: 720px;
+}
+
